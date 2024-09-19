@@ -31,7 +31,7 @@ const Feed = ({ category }) => {
     <div className="feed">
       {data.map((item, index) => {
         return (
-          <Link
+          <Link key={item.id}
             to={`video/${item.snippet.categoryId}/${item.id}`}
             className="card"
           >
@@ -40,7 +40,7 @@ const Feed = ({ category }) => {
             <h3>{item.snippet.channelTitle}</h3>
             <p>
               {value_converter(item.statistics.viewCount)} views &bull;
-              {moment(item.snippet.publishedAt).fromNow}
+              {moment(item.snippet.publishedAt).fromNow()}
             </p>
           </Link>
         );
