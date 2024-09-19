@@ -12,12 +12,12 @@ import news from "../../assets/news.png";
 import jack from "../../assets/jack.png";
 import simon from "../../assets/simon.png";
 import tom from "../../assets/tom.png";
-import megan from "../../assets/megan.png";
-import cameron from "../../assets/cameron.png";
+// import megan from "../../assets/megan.png";
+// import cameron from "../../assets/cameron.png";
 
-const Sidebar = () => {
+const Sidebar = ({sidebar}) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebar ? "" : "small-sidebar"}`}>
         <div className="sortcut-links">
             <div className="side-link">
                 <img src={home} alt="" /><p>Home</p>
