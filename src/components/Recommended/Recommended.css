@@ -22,3 +22,17 @@
     font-size: 13px;
     margin-bottom: 5px;
 }
+
+.vid-info p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 300;
+}
+
+
+@media (max-width:900px) {
+    .recommended {
+        flex-basis: 100%;
+    }
+}
